@@ -4,7 +4,9 @@
       "Bash(git init *)",
       "Bash(git config *)",
       "Bash(cat)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Skill(update-config)",
+      "Skill(update-config:*)"
     ]
   }
 }
