@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Análise de Ações B3 — 2025</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #111827; color: #f9fafb; font-family: 'Segoe UI', sans-serif; }
+
+    nav {
+      background: #1f2937;
+      padding: 1rem 2rem;
+      border-bottom: 2px solid #374151;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    nav h1 { font-size: 1.4rem; font-weight: 700; color: #f9fafb; }
+    nav .badges { display: flex; gap: 0.5rem; }
+    nav .badge {
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .badge-petr4 { background: #1f77b4; }
+    .badge-itub4 { background: #ff7f0e; }
+    .badge-vale3 { background: #2ca02c; }
+
+    main { max-width: 1200px; margin: 0 auto; padding: 2rem 1rem; }
+
+    .section {
+      background: #1f2937;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border: 1px solid #374151;
+    }
+    .section h2 {
+      font-size: 1rem;
+      color: #9ca3af;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      color: #6b7280;
+      font-size: 0.85rem;
+      border-top: 1px solid #374151;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h1>Análise de Ações B3 — 2025</h1>
+  <div class="badges">
+    <span class="badge badge-petr4">PETR4 Petrobras</span>
+    <span class="badge badge-itub4">ITUB4 Itaú</span>
+    <span class="badge badge-vale3">VALE3 Vale</span>
+  </div>
+</nav>
+
+<main>
+  <div class="section">
+    <h2>Cotação Histórica (Fechamento)</h2>
+    {{ chart1 | safe }}
+  </div>
+
+  <div class="section">
+    <h2>Retorno Acumulado no Ano (%)</h2>
+    {{ chart2 | safe }}
+  </div>
+
+  <div class="section">
+    <h2>Volume Negociado Diário</h2>
+    {{ chart3 | safe }}
+  </div>
+</main>
+
+<footer>Dados obtidos via Yahoo Finance · yfinance · Período: Jan–Dez 2025</footer>
+
+</body>
+</html>
